@@ -270,3 +270,27 @@ body {
   line-height: 24px;
   color: #fff;
 }
+
+/* Certificates section */
+.specialization_course_item 
+{
+  color: #fb6d3a;
+  margin-left: 15%;
+  margin-right: 3%;
+}
+
+.specialization_item
+{
+  color:#fb6d3a;
+  margin-right: 3%;
+}
+
+.sertificates_section_link
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 27px;
+  color: #ffffff;
+}
