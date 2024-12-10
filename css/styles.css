@@ -6,7 +6,7 @@ body {
 .main_section {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  height: 90vh;
   background-color: #fff;
   margin: 40px auto;
   box-shadow: 6px 6px 20px 6px rgba(0, 0, 0, 0.1);
@@ -15,7 +15,7 @@ body {
 .right_side_section {
   display: table-column;
   padding: 100px 90px;
-  width: 830px;
+  width: 70vw;
   background-color: #ffffff;
 }
 
@@ -37,7 +37,7 @@ body {
 .about_me_profession {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 17px;
   color: #000000;
   margin: 0 0 20px 0;
@@ -184,7 +184,7 @@ body {
 
 .left_side_section {
   background-color: #e7c054;
-  width: 370px;
+  width: 30vw;
   padding: 40px 0;
 }
 
@@ -246,23 +246,57 @@ body {
 }
 
 /*      soft skills section      */
+.languages_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.languages_section_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 80%;
+}
+
+.language_name {
+  font-weight: bold;
+  color: #fff;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.dot_leader {
+  flex: 1;
+  border-bottom: 1px dotted #fff;
+  margin: 0 10px;
+}
+
+.language_proficiency {
+  font-weight: normal;
+  color: #fff;
+  white-space: nowrap;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
 
 .languages_section,
 .soft_skills_section {
   margin: 50px 0 0 40px;
 }
 
-.languages_list,
 .soft_skills_list {
   padding: 0 0 0 17px;
 }
 
-.languages_section_item,
 .soft_skills_item {
   color: #fb6d3a;
 }
 
-.languages_section_item_text,
 .soft_skills_item_text {
   font-style: normal;
   font-weight: normal;
