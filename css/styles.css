@@ -6,7 +6,7 @@ body {
 .main_section {
   display: flex;
   flex-direction: row-reverse;
-  height: 90vh;
+  min-height: 90vh;
   background-color: #fff;
   margin: 40px auto;
   box-shadow: 6px 6px 20px 6px rgba(0, 0, 0, 0.1);
