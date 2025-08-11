@@ -2,190 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anton Orlenko | C++ Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-    <!--Main section-->
-    <div class="main_section">
-        <!--Right side content secion-->
-        <div class="right_side_section">
-            <!--About section-->
-            <div class="about_me_section">
-                <h1 class="about_me_profession"> C++ developer </h2>
-                    <h1 class="about_me_name"> Anton Orlenko </h1>
-                    <p class="about_me_description">
-                        I am a C++ developer passionate about graphics programming, engine development, and making
-                        games.
-                        For the past three years, I have been working as a C++ developer at Netgame, where I started by
-                        implementing simple game-logic code, but with time
-                        progressed to re-engineering and supporting the project's build pipeline, maintaining the
-                        in-house engine codebase, and developing new engine features.
-                    <p class="about_me_description">
-                        I also have a few pet projects - the one I am the most proud of is the OpenGLDrawer project.
-                        Initially a small academic exercise, it evolved into a basic 3D renderer featuring some advanced
-                        features like deferred rendering and cascaded shadow maps.
-                        Though certain aspects of the code could be improved, it is the project, I was more learning
-                        from, than apllying my knowledge.
+    <div class="resume" role="document">
+        <aside class="sidebar" aria-label="Sidebar">
+            <section class="block contacts">
+                <h2 class="sidebar_title">Contacts</h2>
+                <address>
+                    <div class="contact_row">
+                        <span class="contact_label">GitHub</span>
+                        <a class="contact_link" href="https://github.com/Retro52" target="_blank"
+                            rel="noopener">Retro52</a>
+                    </div>
+                    <div class="contact_row">
+                        <span class="contact_label">Email</span>
+                        <a class="contact_link" href="mailto:orlenko.anto@gmail.com">orlenko.anto@gmail.com</a>
+                    </div>
+                </address>
+            </section>
+
+            <section class="block skills">
+                <h2 class="sidebar_title">Tech Skills</h2>
+                <ul class="skills_list">
+                    <li>C / C++</li>
+                    <li>Git</li>
+                    <li>CMake</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+
+            <section class="block languages">
+                <h2 class="sidebar_title">Languages</h2>
+                <ul class="languages_list" aria-label="Languages and proficiency">
+                    <li class="lang_row">
+                        <span class="lang_name">English</span>
+                        <span class="leader" aria-hidden="true"></span>
+                        <span class="lang_level">B2</span>
+                    </li>
+                    <li class="lang_row">
+                        <span class="lang_name">Ukrainian</span>
+                        <span class="leader" aria-hidden="true"></span>
+                        <span class="lang_level">Native</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="block softskills">
+                <h2 class="sidebar_title">Soft Skills</h2>
+                <ul class="skills_list">
+                    <li>Teamwork</li>
+                    <li>Fast learner</li>
+                    <li>Stress tolerance</li>
+                </ul>
+            </section>
+
+            <section class="block certs">
+                <h2 class="sidebar_title">Licenses &amp; Certifications</h2>
+                <ul class="certs_list">
+                    <li>
+                        <a class="cert_link" href="https://coursera.org/share/838ef2a5f25dc9387a4e7f74d4e8d526"
+                            target="_blank" rel="noopener">
+                            C++ Programming for Unreal Game Development
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="content" role="main">
+            <header class="intro avoid-break">
+                <p class="role">C++ Developer</p>
+                <h1 class="name">Anton Orlenko</h1>
+                <p class="summary">
+                    I'm a C++ developer passionate about graphics programming, engine development, and making games.
+                    Since 2023 I've worked at Netgame, starting with gameplay logic and progressing to re-engineering
+                    the build
+                    pipeline, maintaining the in-house engine codebase, and developing new engine features.
+                </p>
+                <p class="summary">
+                    I also build side projects. My favorite is <a class="projects_link" href="https://github.com/Retro52/OpenGL-3D-Drawer"
+                        target="_blank" rel="noopener">OpenGL 3D Drawer</a> -
+                    a basic 3D renderer that grew from an academic exercise into a playground for deferred rendering,
+                    cascaded shadow maps, and more.
+                </p>
+            </header>
+
+            <section class="section experience avoid-break">
+                <h2 class="section_title">Work Experience</h2>
+                <article class="item">
+                    <header class="item_header">
+                        <h3 class="item_title">C++ Developer | Netgame</h3>
+                        <div class="meta">
+                            <time datetime="2023-02">Feb 2023</time> - <span>Present</span>
+                            <span class="divider">•</span> Kyiv, Ukraine
+                        </div>
+                    </header>
+                    <ul class="bullets">
+                        <li>Maintained and extended an in-house 2D game engine.</li>
+                        <li>Introduced a new asynchronous job system to improve performance and scalability.</li>
+                        <li>Rewrote the renderer to support custom shaders and optimize rendering performance.</li>
+                        <li>Designed and implemented a resource packaging system for faster loading and smaller builds.
+                        </li>
+                        <li>Rewrote and supported the build pipeline for desktop and mobile, reducing build times and
+                            simplifying releases.</li>
+                        <li>Developed internal tools (notably a level editor) to streamline team workflows.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="section projects avoid-break">
+                <h2 class="section_title">Selected Projects</h2>
+
+                <article class="item">
+                    <header class="item_header">
+                        <h3 class="item_title">
+                            <a class="projects_link" href="https://github.com/Retro52/OpenGL-3D-Drawer" target="_blank" rel="noopener">OpenGL
+                                3D Drawer</a>
+                        </h3>
+                        <div class="meta">
+                            <time datetime="2021-11">Nov 2021</time> - <time datetime="2022-09">Sep 2022</time>
+                        </div>
+                    </header>
+                    <p class="item_summary">
+                        C++ application using the OpenGL graphics API. Highlights: perspective camera;
+                        vertex/fragment/geometry shaders; model &amp; material loading
+                        (Assimp, stb); multiple light sources; directional soft shadows (cascaded shadow maps); config
+                        files; logging; simple ECS.
                     </p>
-            </div>
+                </article>
 
-            <div class="project_section">
-                <h3 class="right_side_title"> Work experience </h3>
-                <ol class="projects_list">
-                    <li class="projects_item">
-                        <span class="projects_text">
-                            <a class="projects_link"> Netgame </a>
-                            <p class="education_period"> February 2023 - Present <span class="education_divider"> |
-                                </span> Kyiv, Ukraine </p>
+                <article class="item">
+                    <header class="item_header">
+                        <h3 class="item_title">
+                            <a class="projects_link" href="https://github.com/Retro52/Huffman-coding" target="_blank" rel="noopener">File
+                                Compression Application</a>
+                        </h3>
+                        <div class="meta">
+                            <time datetime="2021-06">Jun 2021</time>
+                        </div>
+                    </header>
+                    <p class="item_summary">
+                        Compression/decompression of text files with Huffman Coding (C). Features: CLI, logging, INI
+                        parser.
+                    </p>
+                </article>
+            </section>
 
-                            <h3 class="projects_text">
-                                <ul>
-                                    <li>Maintained and extended an in-house 2D game engine.</li>
-                                    <li>Introduced a new asynchronous job system to improve performance and scalability.
-                                    </li>
-                                    <li>Rewrote the engine's renderer to support custom shaders and optimize rendering
-                                        performance.</li>
-                                    <li>Designed and implemented a new resource packaging system, enabling more
-                                        efficient asset loading and smaller build sizes.</li>
-                                    <li>Rewrote and supported the build pipeline for desktop and mobile platforms,
-                                        reducing project build times and simplifying release workflows.</li>
-                                    <li>Developed internal tools and utilities, most notably the level editor, to
-                                        streamline team workflow and improve the engine tech.</li>
-                                </ul>
-                            </h3>
-                        </span>
-                    </li>
-                </ol>
-            </div>
-
-            <!--Projects section-->
-            <div class="project_section">
-                <h3 class="right_side_title"> Selected projects </h3>
-                <ol class="projects_list">
-                    <li class="projects_item">
-                        <span class="projects_text">
-                            <a href="https://github.com/Retro52/OpenGL-3D-Drawer" class="projects_link"> OpenGL 3D
-                                Drawer </a>
-                            <p class="education_period"> November 2021 - September 2022 </p>
-                            <h3 class="projects_text">
-                                Application, written in C++ using OpenGL graphics API.
-                                Features of the project include a perspective camera, rendering using vertex, fragment
-                                and geometry (if present) shaders, both models and materials loading (using assimp
-                                and stbi
-                                libs),
-                                multiple light sources lighting, directional light soft shadows (implemented using
-                                cascaded shadow map technique), config
-                                files, logging system, entity system and more.
-                            </h3>
-                        </span>
-                    </li>
-                    <li class="projects_item">
-                        <span class="projects_text">
-                            <a href="https://github.com/Retro52/Huffman-coding" class="projects_link"> File Compression
-                                Application </a>
-                            <p class="education_period"> June 2021 </p>
-                            <h3 class="projects_text">
-                                Application for compression and decompression of text files using Huffman Coding
-                                Algorithm.
-                                Developed as a course project using C programming language.
-                                Main features include files compression, logging system, .ini config file parser,
-                                command-line interface and more.
-                            </h3>
-                        </span>
-                    </li>
-                </ol>
-            </div>
-
-            <!--Education section-->
-            <div class="education_section">
-                <h3 class="right_side_title"> Education </h3>
-                <h4 class="education_place"> National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic
-                    Institute" </h4>
-                <h4 class="education_course"> In progress of receiving a Master’s degree at Computer Science </h4>
-                <p class="education_period"> September 2024 - Present
-                </p>
-                <h4 class="education_course"> Bachelor's degree at Applied Math </h4>
-                <p class="education_period"> September 2020 - June 2024
-                </p>
-            </div>
-        </div>
-
-        <!--Left side content secion-->
-        <div class="left_side_section">
-            <!--Contact secion-->
-            <div class="contacts_section">
-                <h3 class="left_side_title">Contacts</h3>
-
-                <!-- Phone number section-->
-                <div>
-                    <span class="contacts_section_link_type">GitHub:</span>
-                    <a class="contacts_section_link" href="https://github.com/Retro52"> github.com/Retro52 </a>
-                </div>
-
-                <!--Mail section-->
-                <div>
-                    <span class="contacts_section_link_type">Mail:</span>
-                    <a class="contacts_section_link" href="mailto:orlenko.anto@gmail.com"> orlenko.anto@gmail.com </a>
-                </div>
-            </div>
-
-            <!--Tech Skills section-->
-            <div class="tech_skills_section">
-                <h3 class="left_side_title">Tech Skills</h3>
-                <ul class="tech_skills_list">
-                    <li class="tech_skills_item"><span class="tech_skills_item_text"> C/C++ </span></li>
-                    <li class="tech_skills_item"><span class="tech_skills_item_text"> GIT </span></li>
-                    <li class="tech_skills_item"><span class="tech_skills_item_text"> CMake </span></li>
-                    <li class="tech_skills_item"> <span class="tech_skills_item_text"> Python </span> </li>
-                </ul>
-            </div>
-
-            <!--Languages section-->
-            <div class="languages_section">
-                <h3 class="left_side_title">Languages</h3>
-                <ul class="languages_list">
-                    <li class="languages_section_item">
-                        <span class="language_name">English</span>
-                        <span class="dot_leader"></span>
-                        <span class="language_proficiency">B2</span>
-                    </li>
-                    <li class="languages_section_item">
-                        <span class="language_name">Ukrainian</span>
-                        <span class="dot_leader"></span>
-                        <span class="language_proficiency">Native</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!--Soft Skills section-->
-            <div class="soft_skills_section">
-                <h3 class="left_side_title">Soft Skills</h3>
-                <ul class="soft_skills_list">
-                    <li class="soft_skills_item"><span class="soft_skills_item_text"> Teamwork </span></li>
-                    <li class="soft_skills_item"><span class="soft_skills_item_text"> Fast Learner </span></li>
-                    <li class="soft_skills_item"><span class="soft_skills_item_text"> Stress tolerance </span></li>
-                </ul>
-            </div>
-
-            <div class="contacts_section">
-                <h3 class="left_side_title">Licenses & certifications</h3>
-                <ul class="soft_skills_list">
-                    <li class="specialization_item">
-                        <a class="sertificates_section_link"
-                            href="https://coursera.org/share/838ef2a5f25dc9387a4e7f74d4e8d526"> C++ Programming for
-                            Unreal Game Development <br> </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <section class="section education avoid-break">
+                <h2 class="section_title">Education</h2>
+                <article class="item">
+                    <h3 class="item_title">National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic
+                        Institute”</h3>
+                    <p class="edu_line"><strong>MSc, Computer Science</strong> - <time datetime="2024-09">Sep
+                            2024</time> - Present</p>
+                    <p class="edu_line"><strong>BSc, Applied Mathematics</strong> - <time datetime="2020-09">Sep
+                            2020</time> - <time datetime="2024-06">Jun 2024</time></p>
+                </article>
+            </section>
+        </main>
     </div>
-
 </body>
 
 </html>
